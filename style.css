@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Verdana, sans-serif;
+    color: white;
+    
+    background-image: url(design/teglafal.jpg);
+}
+
+main{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "n n n"
+    "a a as"
+    "f f f";
+    margin: auto;
+    width: 80%;
+    max-width: 1000px;
+}
+header{
+    grid-area: n;
+    margin-top: 30px;
+    display: grid;
+    background-image: url(design/beer-new_401732638.jpg);
+    height: 300px;
+    background-size: cover;
+}
+article{
+    background-color: black;
+    grid-area: a;
+    height: fit-content;
+}
+article>div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+aside{
+    grid-area: as;
+    background-color: gray;
+}
+aside ul{
+    list-style: none;
+}
+aside li{
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: red;
+    transition: .5s;
+}
+aside a{
+    color: red;
+    text-decoration: none;
+    margin-left: 10px;
+}
+aside li:hover{
+    background-color: white;
+    padding: 10px;
+}
+
+h2{
+    margin: 20px;
+}
+ul{
+    font-size: 18px;
+    margin: 20px;
+}
+
+footer{
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    padding: 14px;
+    background-color: lightgray;
+    text-align: center;
+    grid-area: f;
+    height: 40px;
+}
+img{
+    margin-top: 30px;
+    margin-left: 30px;
+    border: 1px solid gray;
+    width: 200px;
+}
+
+header>div{
+    text-shadow: 1px 1px black;
+    font-size: 32px;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: Garamond;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
